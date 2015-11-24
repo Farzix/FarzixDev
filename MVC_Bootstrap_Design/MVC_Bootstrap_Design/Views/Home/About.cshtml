@@ -3,27 +3,45 @@
 }
 <div class="container-fluid">
     <div id="myNews" class="panel panel-primary">
-        <div class="panel-heading col-sm-12">
-            <div class="col-sm-10">
-                <p>News</p>
-            </div>
-            <div class="col-sm-2">
-                <p class="myFloatRight">@Html.ActionLink("View all", "Contact", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-sm-10">
+                    <p>News</p>
+                </div>
+
+                <div class="col-sm-2">
+                    <p class="pull-right">@Html.ActionLink("View all", "Contact", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
             </div>
         </div>
 
         <div class="panel-body">
-            test
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="#" class="thumbnail">
+                        <img src="http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png" alt="...">
+                    </a>
+                </div>
+
+                <div class="col-sm-8">df</div>
+
+                <div class="col-sm-2">
+                    <p class="pull-right">@Html.ActionLink("Read More", "Contact", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="myProjects" class="panel panel-success">
-        <div class="panel-heading col-sm-12">
-            <div class="col-sm-10">
-                <p>Projects</p>
-            </div>
-            <div class="col-sm-2">
-                <p class="myFloatRight">@Html.ActionLink("View all", "Index", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-sm-10">
+                    <p>Projects</p>
+                </div>
+
+                <div class="col-sm-2">
+                    <p class="pull-right">@Html.ActionLink("View all", "Index", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
             </div>
         </div>
 
@@ -50,12 +68,15 @@
     </div>
 
     <div id="myBlogs" class="panel panel-info">
-        <div class="panel-heading col-sm-12">
-            <div class="col-sm-10">
-                <p>Blogs</p>
-            </div>
-            <div class="col-sm-2">
-                <p class="myFloatRight">View all<span class="glyphicon glyphicon-chevron-right"></span></p>
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-sm-10">
+                    <p>Blogs</p>
+                </div>
+
+                <div class="col-sm-2">
+                    <p class="pull-right">View all<span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
             </div>
         </div>
 

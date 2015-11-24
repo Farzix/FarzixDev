@@ -27,7 +27,10 @@ textarea {
     float:right;
 }
 
-.myFloatRight a:link, a:visited, a:hover, a:active {
+.panel-heading a:link,
+               a:visited, 
+               a:hover, 
+               a:active {
     color:white;
 }
 
