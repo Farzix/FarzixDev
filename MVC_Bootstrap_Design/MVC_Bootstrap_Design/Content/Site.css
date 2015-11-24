@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 70px;
     padding-bottom: 20px;
+    background-color:tomato;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -26,6 +27,7 @@ textarea {
 .myFloatRight {
     float:right;
 }
+
 .panel-heading a:link,
                a:visited, 
                a:hover, 
@@ -41,13 +43,23 @@ hr{
     border-color:#c6c6c6;
 }
 
-.bottom-align-text {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-.pulling-right{
-    bottom:0;
-    position:absolute;
-    right:0;
+.panel{
+    border:none !important;
+}
+
+.panel-body{
+    background-color:#f1f1f1;
+}
+.panel-primary > .panel-heading{
+    color:whitesmoke;
+}
+
+.panel-success > .panel-heading{
+    background-color:#73C651;
+    color:whitesmoke;
+}
+
+.panel-info > .panel-heading{
+    background-color:#00AAFF;
+    color:whitesmoke;
 }
