@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 20px;
 }
 
@@ -27,10 +27,10 @@ textarea {
     float:right;
 }
 .myFloatRight-a{
-    color:black;
-    float:right;
-}
-.myFloatRight a:link, a:visited, a:hover, a:active {
+.panel-heading a:link,
+               a:visited, 
+               a:hover, 
+               a:active {
     color:white;
 }
 
@@ -38,7 +38,17 @@ textarea {
 .panel-heading p {
     margin-bottom:0px;
 }
+hr{
+    border-color:#c6c6c6;
+}
 
-#myNews{
-    top:100px;
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+.pulling-right{
+    bottom:0;
+    position:absolute;
+    right:0;
 }
