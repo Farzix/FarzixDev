@@ -38,3 +38,17 @@ textarea {
 .panel-heading p {
     margin-bottom:0px;
 }
+hr{
+    border-color:#c6c6c6;
+}
+
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+.pulling-right{
+    bottom:0;
+    position:absolute;
+    right:0;
+}
