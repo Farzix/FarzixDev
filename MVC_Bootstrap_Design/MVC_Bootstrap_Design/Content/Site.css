@@ -30,7 +30,13 @@ textarea {
                a:active {
     color:white;
 }
-
+.noselect{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
 
 .panel-heading p {
     margin-bottom:0px;
