@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -26,7 +26,10 @@ textarea {
 .myFloatRight {
     float:right;
 }
-
+.myFloatRight-a{
+    color:black;
+    float:right;
+}
 .myFloatRight a:link, a:visited, a:hover, a:active {
     color:white;
 }
@@ -34,4 +37,8 @@ textarea {
 
 .panel-heading p {
     margin-bottom:0px;
+}
+
+#myNews{
+    top:100px;
 }
