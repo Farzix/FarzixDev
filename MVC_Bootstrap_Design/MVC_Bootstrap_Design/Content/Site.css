@@ -24,10 +24,6 @@ textarea {
     max-width: 280px;
 }
 
-.myFloatRight {
-    float:right;
-}
-
 .panel-heading a:link,
                a:visited, 
                a:hover, 
@@ -39,6 +35,7 @@ textarea {
 .panel-heading p {
     margin-bottom:0px;
 }
+
 hr{
     border-color:#c6c6c6;
 }
