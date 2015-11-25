@@ -253,6 +253,8 @@
     <Content Include="Views\Home\NewsThree.cshtml" />
     <Content Include="Views\Home\News.cshtml" />
     <Content Include="Views\Home\Blogs.cshtml" />
+    <Content Include="Views\Home\BlogsOne.cshtml" />
+    <Content Include="Views\Home\BlogsTwo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

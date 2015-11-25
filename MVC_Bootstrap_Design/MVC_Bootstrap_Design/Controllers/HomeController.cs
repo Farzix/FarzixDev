@@ -61,5 +61,17 @@ namespace MVC_Bootstrap_Design.Controllers
             return View();
 
         }
+        public ActionResult BlogsOne()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult BlogsTwo()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }

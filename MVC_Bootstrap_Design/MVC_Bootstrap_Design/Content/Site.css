@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 70px;
     padding-bottom: 20px;
-    background-color:tomato;
+    background: linear-gradient(to bottom, #b1b5b4 0%,#d6d8d8 50%,#e0e5e4 100%);
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -65,4 +65,8 @@ hr{
 .panel-info > .panel-heading{
     background-color:#00AAFF;
     color:whitesmoke;
+}
+
+.fa-rss:before{
+    content:"\f09e";
 }
