@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 70px;
+    padding-top: 55px;
     padding-bottom: 20px;
     background: linear-gradient(to bottom, #b1b5b4 0%,#d6d8d8 50%,#e0e5e4 100%);
 }
@@ -69,4 +69,16 @@ hr{
 
 .fa-rss:before{
     content:"\f09e";
+}
+#myNews{
+    padding-top:51px;
+    margin-top:0;
+}
+#myProjects{
+    padding-top:50px;
+    margin-top:-20px;
+}
+#myBlogs{
+    padding-top:50px;
+    margin-top:-20px;
 }
