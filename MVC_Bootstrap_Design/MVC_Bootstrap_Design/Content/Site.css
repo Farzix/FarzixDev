@@ -124,3 +124,8 @@ hr {
       -webkit-transform: translateY(0%);
     }
   }
+
+.panel-body a{
+    color:black;
+}
+

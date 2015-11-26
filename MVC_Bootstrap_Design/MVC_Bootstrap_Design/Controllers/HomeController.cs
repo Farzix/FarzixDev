@@ -73,5 +73,35 @@ namespace MVC_Bootstrap_Design.Controllers
 
             return View();
         }
+        public ActionResult BlogsThree()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Projects()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult ProjectsOne()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult ProjectsTwo()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult ProjectsThree()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
