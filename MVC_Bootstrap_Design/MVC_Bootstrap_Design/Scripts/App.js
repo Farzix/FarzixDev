@@ -4,6 +4,7 @@
 //var url = window.location.href;     // Returns full URL
 
 $(document).ready(function () {
+    //alert(pathname);
     $('a').on('click', function () {
         switch (this.id) {
             case 'navNews':
@@ -21,11 +22,10 @@ $(document).ready(function () {
             default:
                 break;
         }
-
-        //$('html, body').animate({
-        //    scrollTop: $(scrollTo).offset().top
-        //}, 900);
     });
+
+    //currentPath(pathname);
+
     //alert(pathname);
     // Add smooth scrolling to all links in navbar + footer link
     //$(".navbar a, footer a[href='#myPage']").on('click', function (event) {
@@ -58,6 +58,31 @@ $(document).ready(function () {
         });
     });
 });
+
+//function currentPath(currPath) {
+//    debugger;
+//    $('#flashNav').html('');
+//    var appentString;
+//    switch (currPath) {
+//        case '/Home/About':
+//            appentString = '<li><a id="navNews" >News</a></li><li><a id="navProjects" >Projects</a></li><li><a id="navBlogs" >Blogs</a></li>';
+//            break;
+//        case '/Home/News':
+//        case '/Home/NewsOne':
+//        case '/Home/NewsTwo':
+//        case '/Home/NewsThree':
+//        case '/Home/Blogs':
+//        case '/Home/BlogsOne':
+//        case '/Home/BlogsTwo':
+//            appentString = '<li><a id="navNews" >News</a></li><li>@Html.ActionLink("Projects", "Projects", "Home")</li><li>@Html.ActionLink("Blogs", "Blogs", "Home")</li>';
+//            break;
+//        default:
+//            appentString = '<li><a id="navNews" >News</a></li><li><a id="navProjects" >Projects</a></li><li><a id="navBlogs" >Blogs</a></li>';
+//            break;
+//    }
+
+//    $('#flashNav').append(appentString);
+//}
 
 function SmoothSlide(scrollTo) {
     $('html, body').animate({
