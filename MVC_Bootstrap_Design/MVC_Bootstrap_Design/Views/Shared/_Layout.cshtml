@@ -52,9 +52,9 @@
                             <li>@Html.ActionLink("About", "About", "Home")</li>
                             <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         *@
-                        <li><a id="navNews" >News</a></li>
-                        <li><a id="navProjects" >Projects</a></li>
-                        <li><a id="navBlogs" >Blogs</a></li>
+                        <li><a id="navNews" role="button">News</a></li>
+                        <li><a id="navProjects" role="button">Projects</a></li>
+                        <li><a id="navBlogs" role="button">Blogs</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -64,9 +64,11 @@
         @RenderBody()
         <hr />
         <footer class="container-fluid text-center">
-            <a href="#myPage" title="To Top">
-                <span class="glyphicon glyphicon-chevron-up"></span>
-            </a>
+            <div class="row">
+                <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;" style="background-color:#e0e5e4;">
+                    <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+                </a>
+            </div>
             <p class="pull-left">&copy; @DateTime.Now.Year - Stebra Consulting</p>
         </footer>
     </div>
@@ -74,38 +76,38 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     @*<script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            $(document).ready(function () {
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
 
-                // Prevent default anchor click behavior
-                event.preventDefault();
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-                // Store hash
-                var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function () {
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
                 });
-            });
 
-            $(window).scroll(function () {
-                $(".slideanim").each(function () {
-                    var pos = $(this).offset().top;
+                $(window).scroll(function () {
+                    $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
 
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
                 });
-            });
-        })
-    </script>*@
+            })
+        </script>*@
 </body>
 </html>

@@ -129,3 +129,6 @@ hr {
     color:black;
 }
 
+[role=button]{
+    cursor:pointer;
+}
