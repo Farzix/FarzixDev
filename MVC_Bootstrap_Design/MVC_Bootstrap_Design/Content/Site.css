@@ -25,60 +25,102 @@ textarea {
 }
 
 .panel-heading a:link,
-               a:visited, 
-               a:hover, 
-               a:active {
-    color:white;
+a:visited,
+a:hover,
+a:active {
+    color: white;
 }
-.noselect{
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .panel-heading p {
-    margin-bottom:0px;
+    margin-bottom: 0px;
 }
 
-hr{
-    border-color:#c6c6c6;
+hr {
+    border-color: #c6c6c6;
 }
 
-.panel{
-    border:none !important;
+.panel {
+    border: none !important;
 }
 
-.panel-body{
-    background-color:#f1f1f1;
-}
-.panel-primary > .panel-heading{
-    color:whitesmoke;
+.panel-body {
+    background-color: #f1f1f1;
 }
 
-.panel-success > .panel-heading{
-    background-color:#73C651;
-    color:whitesmoke;
+.panel-primary > .panel-heading {
+    color: whitesmoke;
 }
 
-.panel-info > .panel-heading{
-    background-color:#00AAFF;
-    color:whitesmoke;
+.panel-success > .panel-heading {
+    background-color: #73C651;
+    color: whitesmoke;
 }
 
-.fa-rss:before{
-    content:"\f09e";
+.panel-info > .panel-heading {
+    background-color: #00AAFF;
+    color: whitesmoke;
 }
-#myNews{
-    padding-top:51px;
-    margin-top:0;
+
+.fa-rss:before {
+    content: "\f09e";
 }
-#myProjects{
-    padding-top:50px;
-    margin-top:-20px;
+
+#myNews {
+    padding-top: 51px;
+    margin-top: 0;
 }
-#myBlogs{
-    padding-top:50px;
-    margin-top:-20px;
+
+#myProjects {
+    padding-top: 50px;
+    margin-top: -20px;
 }
+
+#myBlogs {
+    padding-top: 50px;
+    margin-top: -20px;
+}
+
+
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
