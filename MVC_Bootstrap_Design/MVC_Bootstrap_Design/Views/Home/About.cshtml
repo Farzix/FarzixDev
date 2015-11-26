@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-
+<!-- News Panel -->
 <div id="myNews"></div>
 <div class="container-fluid">
     <div class="panel panel-primary">
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-
+        <!-- News Body -->
         <div class="panel-body">
             <div class="row">
                 <div class="col-sm-2">
@@ -24,7 +24,6 @@
                         <img src="http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png" alt="...">
                     </a>
                 </div>
-
                 <div class="col-sm-7">
                     <h2>Test News One!</h2>
                     <p>
@@ -52,21 +51,17 @@
                         </b>
                     </p>
                 </div>
-
                 <div class="col-sm-3 col-sm-offset-9">
                     <p class="pull-right">@Html.ActionLink("Read More", "NewsTwo", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
                 </div>
             </div>
-
             <hr />
-
             <div class="row">
                 <div class="col-sm-2">
                     <a href="#" class="thumbnail">
                         <img src="http://blog.room34.com/wp-content/uploads/underdog/logo.thumbnail.png" alt="...">
                     </a>
                 </div>
-
                 <div class="col-sm-7">
                     <h2>Test News Three</h2>
                     <p>
@@ -75,13 +70,13 @@
                         </b>
                     </p>
                 </div>
-
                 <div class="col-sm-3 col-sm-offset-9">
                     <p class="pull-right">@Html.ActionLink("Read More", "NewsThree", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Projects Panel -->
     <div id="myProjects"></div>
     <div class="panel panel-success slideanim">
         <div class="panel-heading">
@@ -89,34 +84,57 @@
                 <div class="col-sm-10">
                     <p><b>Projects</b></p>
                 </div>
-
                 <div class="col-sm-2">
                     <p class="pull-right">@Html.ActionLink("View all", "Index", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
                 </div>
             </div>
         </div>
-
+        <!-- Projects Body -->
         <div class="panel-body">
-            <table class="table table-striped">
-                <tr>
-                    <td>
-                        test
-                    </td>
-                    <td>
-                        test
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        test
-                    </td>
-                    <td>
-                        test
-                    </td>
-                </tr>
-            </table>
+            <div class="jumbotron" style="padding:0">
+                <div class="thumbnail">
+                    <img src="http://www.nisville.com/images/Incognito.jpg" alt="...">
+                </div>
+            </div>
+            <div class="panel-title">
+                <div class="row">
+                    <div class="col-sm-3">Project Name</div>
+                    <div class="col-sm-2">Start Date</div>
+                    <div class="col-sm-2">End Date</div>
+                    <div class="col-sm-2">Phase</div>
+                </div>
+                <hr />
+            </div>
+            <div class="row ">
+                <div class="col-sm-3">Tales from the Beach</div>
+                <div class="col-sm-2">2006-04-12</div>
+                <div class="col-sm-2">2008-02-18</div>
+                <div class="col-sm-2">Done</div>
+                <div class="col-sm-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "Projects", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">Surreal</div>
+                <div class="col-sm-2">2012-10-23</div>
+                <div class="col-sm-2">2015-06-07</div>
+                <div class="col-sm-2">Mastering</div>
+                <div class="col-sm-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "Projects", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">Amplified Soul</div>
+                <div class="col-sm-2">2015-07-01</div>
+                <div class="col-sm-2">2016-01-29</div>
+                <div class="col-sm-2">Mixing</div>
+                <div class="col-sm-3">
+                    <p class="pull-right">@Html.ActionLink("Go to project", "Projects", "Home") <span class="glyphicon glyphicon-chevron-right"></span></p>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Blogs Panel -->
     <div id="myBlogs"></div>
     <div class="panel panel-info slideanim">
         <div class="panel-heading">
@@ -129,14 +147,13 @@
                 </div>
             </div>
         </div>
+        <!-- Blogs Body -->
         <div class="row">
             <div class="container-fluid">
                 <div class="panel panel-default col-sm-8" style="margin-bottom:0;">
                     <div class="panel-body" style="background-color:#F2EFDC; margin-top:20px;">
                         <div class="col-sm-12">
-                            <div class="h3">
-                                Folly words
-                            </div>
+                            <div class="h3">Folly words</div>
                             <p>
                                 Folly words widow one downs few age every seven.
                                 If miss part by fact he park just shew.
@@ -163,9 +180,7 @@
                             </div>
                         </div>
                         <div class="col-sm-8">
-                            <div class="h3">
-                                A. Pennyworth
-                            </div>
+                            <div class="h3">A. Penny</div>
                             <p>
                                 Mr my ready guest ye after short at.
                                 Gave read use way make spot how nor.
@@ -181,9 +196,7 @@
                 <div class="panel panel-default col-sm-8">
                     <div class="panel-body" style="background-color:#E4E0FC">
                         <div class="col-sm-12">
-                            <div class="h3">
-                                Needed feebly
-                            </div>
+                            <div class="h3">Needed feebly</div>
                             <p>
                                 Needed feebly dining oh talked wisdom oppose at.
                                 Applauded use attempted strangers now are middleton concluded had.
@@ -210,9 +223,7 @@
                             </div>
                         </div>
                         <div class="col-sm-8">
-                            <div class="h3">
-                                B. Wayne
-                            </div>
+                            <div class="h3">B. Wayne</div>
                             <p>
                                 Am of mr friendly by strongly peculiar juvenile.
                                 Unpleasant it sufficient simplicity am by friendship no inhabiting.
