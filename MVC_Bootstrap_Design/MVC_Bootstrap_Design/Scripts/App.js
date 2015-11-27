@@ -1,40 +1,10 @@
 ﻿'use strict';
 
-var pathname = window.location.pathname; // Returns path only
-var url = window.location.href;     // Returns full URL
+var pathname = window.location.pathname;    // Returns path only
+var url = window.location.href;             // Returns full URL
 
 $(document).ready(function () {
     currentPath(pathname);
-    //alert(pathname);
-    //$('a').on('click', function () {
-    //    switch (this.id) {
-    //        case 'navNews':
-    //            SmoothSlide('#myNews');
-    //            //scrollTo = '#myNews';
-    //            break;
-    //        case 'navProjects':
-    //            SmoothSlide('#myProjects');
-    //            //scrollTo = '#myProjects';
-    //            break;
-    //        case 'navBlogs':
-    //            SmoothSlide('#myBlogs');
-    //            //scrollTo = '#myBlogs';
-    //            break;
-    //        default:
-    //            break;
-    //    }
-    //});
-
-    //$(window).scroll(function () {
-    //    $(".slideanim").each(function () {
-    //        var pos = $(this).offset().top;
-
-    //        var winTop = $(window).scrollTop();
-    //        if (pos < winTop + 600) {
-    //            $(this).addClass("slide");
-    //        }
-    //    });
-    //});
 });
 
 function currentPath(currUrl) {
@@ -92,9 +62,6 @@ function currentPath(currUrl) {
             LoadAnimations();
             break;
     }
-
-    //$('#flashNav').append(appentString);
-    //LoadAnimations();
 }
 
 function LoadAnimations() {
@@ -102,15 +69,12 @@ function LoadAnimations() {
         switch (this.id) {
             case 'navNews':
                 SmoothSlide('#myNews');
-                //scrollTo = '#myNews';
                 break;
             case 'navProjects':
                 SmoothSlide('#myProjects');
-                //scrollTo = '#myProjects';
                 break;
             case 'navBlogs':
                 SmoothSlide('#myBlogs');
-                //scrollTo = '#myBlogs';
                 break;
             default:
                 break;
