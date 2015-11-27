@@ -49,6 +49,7 @@ hr {
 
 .panel {
     border: none !important;
+    box-shadow:none;
 }
 
 .panel-body {
@@ -131,4 +132,7 @@ hr {
 
 [role=button]{
     cursor:pointer;
+}
+.well{
+    box-shadow:none;
 }
