@@ -12,14 +12,12 @@ namespace MVC_Bootstrap_Design.Controllers
         {
             return View();
         }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
@@ -27,28 +25,15 @@ namespace MVC_Bootstrap_Design.Controllers
             return View();
         }
 
+
+        /* Main Pages */
         public ActionResult News()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
-
-        public ActionResult NewsOne()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-        public ActionResult NewsTwo()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-        public ActionResult NewsThree()
+        public ActionResult Projects()
         {
             ViewBag.Message = "Your contact page.";
 
@@ -59,8 +44,29 @@ namespace MVC_Bootstrap_Design.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
-
         }
+        
+        /* News Children */
+        public ActionResult NewsOne()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult NewsTwo()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult NewsThree()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        /* Blogs children */
         public ActionResult BlogsOne()
         {
             ViewBag.Message = "Your contact page.";
@@ -79,12 +85,8 @@ namespace MVC_Bootstrap_Design.Controllers
 
             return View();
         }
-        public ActionResult Projects()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+        
+        /* Projects Children */
         public ActionResult ProjectsOne()
         {
             ViewBag.Message = "Your contact page.";
